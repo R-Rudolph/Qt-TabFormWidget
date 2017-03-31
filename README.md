@@ -1,5 +1,4 @@
 # Qt-TabFormWidget
-
 Qt-TabFormWidget is a Qt Widget with a simple interface for ordering Widgets in a Form Layout-like manner within (nested) Tab Widgets.
 
 When adding a widget, a label which describes where to put the widget must be provided. For example, the label
