@@ -17,3 +17,10 @@ LabelPolicy::NewLine: The label is displayed above the widget.
 ```
 
 Further, a filtering mechanism is given, which filters shown widgets by their widget label (but not tab). Empty tabs will be ommited.
+
+## Usage
+
+For usage with qmake, include the provided pri-file in your pro-file. The widget can be included with
+```
+#include "qtabform/qtabformwidget.h"
+```
