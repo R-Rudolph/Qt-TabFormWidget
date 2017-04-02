@@ -1,4 +1,4 @@
-#include "qtabform/qtabformelement.h"
+#include "qtabformelement.h"
 
 QTabFormElement::QTabFormElement(QWidget *parent) : QWidget(parent)
 {

@@ -1,8 +1,8 @@
-#include "qtabform/qtabformcontainer.h"
+#include "qtabformcontainer.h"
 
 #include <QStackedLayout>
 #include <QTabWidget>
-#include "qtabform/qtabformform.h"
+#include "qtabformform.h"
 
 QTabFormContainer::TabContainer *QTabFormContainer::getContainer(const QString &label)
 {

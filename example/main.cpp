@@ -1,8 +1,9 @@
 #include <QApplication>
 #include <QLineEdit>
 #include <QCheckBox>
-#include "qtabform/qtabformwidget.h"
 #include <QDebug>
+
+#include <QTabFormWidget>
 
 int main(int argc, char *argv[])
 {

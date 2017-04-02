@@ -1,4 +1,4 @@
-#include "qtabform/qtabformform.h"
+#include "qtabformform.h"
 
 #include <QGridLayout>
 #include <QString>

@@ -1,12 +1,12 @@
-#include "qtabform/qtabformwidget.h"
+#include "qtabformwidget.h"
 
 #include <QVBoxLayout>
 #include <QLabel>
 #include <QStringList>
 #include <QLineEdit>
 #include <QRegularExpression>
-#include "qtabform/qtabformcontainer.h"
-#include "qtabform/qtabformform.h"
+#include "qtabformcontainer.h"
+#include "qtabformform.h"
 
 QStringList QTabFormWidget::splitLabel(const QString &label)
 {
