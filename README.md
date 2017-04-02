@@ -21,5 +21,5 @@ Further, a filtering mechanism is given, which filters shown widgets by their wi
 
 For usage with qmake, include the provided pri-file in your pro-file. The widget can be included with
 ```
-#include "qtabform/qtabformwidget.h"
+#include <QTabFormWidget>
 ```

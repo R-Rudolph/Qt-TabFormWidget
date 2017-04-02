@@ -1,5 +1,5 @@
 QT       += core gui widgets
-INCLUDEPATH += $$PWD/include
+INCLUDEPATH += $$PWD/include/qtabform
 
 SOURCES += \
     $$PWD/src/qtabform/qtabformwidget.cpp \
@@ -9,6 +9,7 @@ SOURCES += \
 
 HEADERS  += \
     $$PWD/include/qtabform/qtabformwidget.h \
-    $$PWD/include/qtabform/qtabformform.h \
     $$PWD/include/qtabform/qtabformcontainer.h \
-    $$PWD/include/qtabform/qtabformelement.h
+    $$PWD/include/qtabform/qtabformelement.h \
+    $$PWD/include/qtabform/qtabformform.h \
+    $$PWD/include/qtabform/QTabFormWidget

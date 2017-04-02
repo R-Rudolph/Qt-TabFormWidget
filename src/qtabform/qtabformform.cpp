@@ -47,7 +47,7 @@ QTabFormWidgetForm::QTabFormWidgetForm(QWidget *parent) : QTabFormElement(parent
 {
   layout = new QGridLayout(this);
   alignmentWidget = new QWidget();
-  alignmentWidget->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
+  alignmentWidget->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
   layout->addWidget(alignmentWidget,layout->rowCount(),0,1,2);
 }
 
