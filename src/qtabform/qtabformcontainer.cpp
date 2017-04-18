@@ -26,6 +26,10 @@ void QTabFormContainer::addTab(const QStringList &tabLabel, int labelDepth)
   {
     newTab = new QTabFormContainer(this);
   }
+  else
+  {
+    return;
+  }
   TabContainer newContainer{tabLabel[labelDepth],newTab};
   tabs.append(newContainer);
   mainWidget->addTab(newTab,tabLabel[labelDepth]);

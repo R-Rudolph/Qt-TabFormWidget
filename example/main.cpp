@@ -14,9 +14,8 @@ int main(int argc, char *argv[])
   settingsWidget->addWidget("Menu A\\/B/B/Field B2",new QCheckBox("Field B2"),LabelPolicy::Empty);
   settingsWidget->addWidget("Menu C/Field C1",new QLineEdit(),LabelPolicy::None);
   settingsWidget->addWidget("Menu C/Field C2",new QLineEdit(),LabelPolicy::Show);
-  settingsWidget->addWidget("Menu C/Field B3",new QLineEdit(),LabelPolicy::NewLine);
+  settingsWidget->addWidget("Menu C/Field C3",new QLineEdit(),LabelPolicy::NewLine);
   settingsWidget->show();
-
 
   qDebug() << settingsWidget->getWidget<QLineEdit>("Menu C/Field B3");
   return a.exec();
