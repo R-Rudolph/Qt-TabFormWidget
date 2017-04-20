@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
   settingsWidget->addWidget("Menu C/Field C3",new QLineEdit(),LabelPolicy::NewLine);
   settingsWidget->show();
 
+
+
   qDebug() << settingsWidget->getWidget<QLineEdit>("Menu C/Field B3");
   return a.exec();
 }
