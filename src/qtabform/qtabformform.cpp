@@ -46,6 +46,7 @@ QTabFormWidgetForm::WidgetContainer* QTabFormWidgetForm::containerByLabel(const 
 QTabFormWidgetForm::QTabFormWidgetForm(QWidget *parent) : QTabFormElement(parent)
 {
   layout = new QGridLayout(this);
+  layout->setColumnStretch(1,1);
   alignmentWidget = new QWidget();
   alignmentWidget->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
   layout->addWidget(alignmentWidget,layout->rowCount(),0,1,2);
@@ -67,7 +68,13 @@ QWidget *QTabFormWidgetForm::getWidget(const QStringList &label, int labelDepth)
   if(labelDepth!=label.size()-1)
     return nullptr;
   else
-    return containerByLabel(label[labelDepth])->widget;
+  {
+    WidgetContainer* container = containerByLabel(label[labelDepth]);
+    if(container != nullptr)
+      return container->widget;
+    else
+      return nullptr;
+  }
 }
 
 bool QTabFormWidgetForm::filter(const QString &filterString)
